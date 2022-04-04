@@ -26,3 +26,15 @@
 
 // * When a user refreshes or returns to the brower page, the win and loss counts should persist.
 
+var gameRunning = false;
+
+const wordArray = [];
+
+function gameRunning() {
+    if (gameRunning) {
+        return;
+    }
+
+}
+
+document.getElementById("new-game").addEventListener("click", startGame);
