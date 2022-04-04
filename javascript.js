@@ -28,13 +28,21 @@
 
 var gameRunning = false;
 
-const wordArray = [];
-
-function gameRunning() {
+function startGame() {
     if (gameRunning) {
         return;
     }
+    gameRunning = true;
+
+    var wordArray = mysteryWord.split("")
+    for (var i = 0; i < wordArray.length; i++) {
+        const letter = document.createElement("p")
+    }
+
+
 
 }
 
 document.getElementById("new-game").addEventListener("click", startGame);
+
+var mysteryWord = document.getElementById("mystery-word").value;
